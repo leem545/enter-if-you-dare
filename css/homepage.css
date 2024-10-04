@@ -1,0 +1,40 @@
+video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.bg-video {
+    position: relative; 
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.text-overlay {
+    position: absolute; 
+    top: 7%;
+    left: 13%;
+   
+    color: #ECFEFC; 
+    text-shadow: 8px 7px 8.8px rgba(0, 0, 0, 0.25);
+}
+
+.text-overlay h1 {
+    font-family: "bmx-radical", sans-serif; 
+    font-size: 160px; 
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.transparent-box {
+    position: absolute; 
+    top: 40%; 
+    left: 60%; 
+    width: 30%; 
+    height: 30%;
+    z-index: 5; 
+    cursor: pointer; 
+    background-color: rgba(0, 0, 0, 0); 
+}

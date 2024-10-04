@@ -1,0 +1,165 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    overflow-x: hidden; 
+}
+
+.intro-text {
+    position: relative; 
+    z-index: 2; 
+    padding-top: 100px;
+    width: 60vw;
+    margin: 0 auto;
+    color: var(--white);
+    text-align: center;
+}
+
+figure {
+    margin-top: 300px; 
+}
+
+
+
+.film-details {
+    background: linear-gradient(
+        to right, 
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.3)  
+    ), url("../images/psybg.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #464646;
+    min-height: 100vh; 
+    color: var(--gray-100);
+    position: relative;
+}
+
+
+section {
+    
+    padding:2rem;
+    margin:0;
+}
+
+.intro-text {
+    padding-top: 40px;
+    width: 60vw;
+    margin: 0 auto;
+    color:var(--white);
+    text-align: center;
+}
+
+h2 {
+    padding-top: 300px;
+    line-height: 1;
+    margin:0 0 1rem 0;
+}
+
+.film-info {
+    position: relative; 
+}
+
+.ratings-overlay {
+    position: absolute; 
+    top: 0px; 
+    left: 70%;
+    transform: translateX(-50%); 
+    display: flex;
+    gap: 20px; 
+    align-items: center;
+    z-index: 2; 
+}
+
+.rating {
+    text-align: center;
+}
+
+.rating img {
+    width: 40px; 
+    height: auto; 
+}
+.ranking-text {
+    font-family: 'BMX-Radical', sans-serif;
+    font-size: 16px; 
+    color: #fff; 
+}
+
+.hand-icon {
+    position: fixed; 
+    top: 20px; 
+    right: 40px; 
+    z-index: 10; 
+    cursor: pointer; 
+
+}
+
+.hand-icon img {
+    width: 100px; 
+    height: auto; 
+}
+
+.next-page-button {
+    position: absolute; 
+    bottom: 20px; 
+    right: 20px;
+    z-index: 10; 
+    cursor: pointer; 
+ 
+}
+
+.arrow-icon {
+    width: 40px; 
+    height: auto; 
+  
+}
+
+.back-page-button {
+    position: absolute; 
+    bottom: 20px; 
+    left: 20px; 
+    z-index: 10; 
+    cursor: pointer; 
+    
+}
+
+.arrow-icon2 {
+    width: 40px; 
+    height: auto; 
+    
+}
+
+
+
+
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.grid-container {
+    position: relative;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 32px;
+    gap: 32px;
+    padding-top: 100px;
+    
+    /* by default use min 200px wide columns auto-fit into width */
+    grid-template-columns: minmax(200px, 1fr);
+  }
+  
+  /* grids to 3 columns above mobile sizes */
+  @media (min-width: 600px) {
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr);
+      padding: 10px 0;
+    }
+    
+    /* basic grids */
+    .grid-container.details {
+        width: 60vw;
+        margin: 0 auto;
+        grid-template-columns: 150px 1fr;
+    }
+
+  }
