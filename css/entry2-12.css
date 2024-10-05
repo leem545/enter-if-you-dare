@@ -17,7 +17,7 @@ html, body {
 }
 
 figure {
-    margin-top: 300px; 
+    margin-top: 100px; 
 }
 
 
@@ -53,7 +53,7 @@ section {
 }
 
 h2 {
-    padding-top: 300px;
+    padding-top: 100px;
     line-height: 1;
     margin:0 0 1rem 0;
 }
