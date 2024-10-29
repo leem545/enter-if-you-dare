@@ -1,23 +1,9 @@
-.lead-img {
-    position: relative;
-    background: url("../images/slasherfirst.jpeg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color:#464646;
-    min-height:1000px;
-    z-index: 0;
-}
-.lead-img::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+html, body {
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.65); 
-    z-index: 1; 
-    pointer-events: none; 
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    overflow-x: hidden; 
 }
 
 .intro-text {
@@ -31,7 +17,7 @@
 }
 
 figure {
-    margin-top: 300px; 
+    margin-top: 100px; 
 }
 
 
@@ -39,23 +25,18 @@ figure {
 .film-details {
     background: linear-gradient(
         to right, 
-        rgba(0, 0, 0, 0.7), 
-        rgba(0, 0, 0, 0.3)  
-    ),url("../images/slasherbg.jpeg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color:#464646;
-    min-height:1000px;
-    color: var(--gray-100);
-    
+        rgb(0, 0, 0), 
+        rgba(0, 0, 0, 0.558)  
+    ), url("../images/gorebg.jpeg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #464646;
-    min-height: 1000px;
+    min-height: 100vh; 
     color: var(--gray-100);
+    position: relative;
 }
+
 
 section {
     
@@ -72,7 +53,7 @@ section {
 }
 
 h2 {
-    padding-top: 300px;
+    padding-top: 100px;
     line-height: 1;
     margin:0 0 1rem 0;
 }
@@ -121,18 +102,33 @@ h2 {
 }
 
 .next-page-button {
-    position: fixed; 
+    position: absolute; 
     bottom: 20px; 
-    right: 20px; /* 화면의 오른쪽에서 20px 떨어진 위치 */
-    z-index: 10; /* 다른 요소 위에 표시되도록 레이어 순서 설정 */
-    cursor: pointer; /* 클릭 가능한 포인터 모양 */
-    
+    right: 20px;
+    z-index: 10; 
+    cursor: pointer; 
+ 
 }
 
 .arrow-icon {
-    width: 40px; /* 화살표 아이콘의 너비 설정 */
-    height: auto; /* 비율 유지 */
-    opacity: 0.8; /* 기본 투명도 설정 */
+    width: 40px; 
+    height: auto; 
+  
+}
+
+.back-page-button {
+    position: absolute; 
+    bottom: 20px; 
+    left: 20px; 
+    z-index: 10; 
+    cursor: pointer; 
+    
+}
+
+.arrow-icon2 {
+    width: 40px; 
+    height: auto; 
+    
 }
 
 .watch-trailer-btn {
@@ -156,6 +152,7 @@ h2 {
     background-color: #666; /* hover 시 더 밝은 색상 */
     transform: scale(1.05); /* 약간 커지는 효과 */
 }
+
 
 
 /* Grid
@@ -187,5 +184,3 @@ h2 {
     }
 
   }
-
-  

@@ -135,7 +135,27 @@ h2 {
     opacity: 0.8; /* 기본 투명도 설정 */
 }
 
+.watch-trailer-btn {
+    position: fixed;
+    bottom: 15px; 
+    left: 5%; 
+    padding: 10px 20px;
+    background-color: #3a3636;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    border: 2px solid #484646;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 10; /* 다른 요소보다 위에 표시되도록 설정 */
+    
+}
 
+.watch-trailer-btn:hover {
+    background-color: #666; /* hover 시 더 밝은 색상 */
+    transform: scale(1.05); /* 약간 커지는 효과 */
+}
 
 
 /* Grid

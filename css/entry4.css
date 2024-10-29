@@ -1,6 +1,6 @@
 .lead-img {
     position: relative;
-    background: url("../images/slasherfirst.jpeg");
+    background: url("../images/creaturefirst.jpeg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,16 +39,15 @@ figure {
 .film-details {
     background: linear-gradient(
         to right, 
-        rgba(0, 0, 0, 0.7), 
+        rgb(0, 0, 0), 
         rgba(0, 0, 0, 0.3)  
-    ),url("../images/slasherbg.jpeg");
+    ),url("../images/creaturebg.jpeg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color:#464646;
     min-height:1000px;
     color: var(--gray-100);
-    
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -121,8 +120,8 @@ h2 {
 }
 
 .next-page-button {
-    position: fixed; 
-    bottom: 20px; 
+    position: fixed; /* 화면에 고정하여 스크롤과 무관하게 유지 */
+    bottom: 20px; /* 화면의 아래에서 20px 떨어진 위치 */
     right: 20px; /* 화면의 오른쪽에서 20px 떨어진 위치 */
     z-index: 10; /* 다른 요소 위에 표시되도록 레이어 순서 설정 */
     cursor: pointer; /* 클릭 가능한 포인터 모양 */
